@@ -8,10 +8,11 @@
 
 const numeros = []; //para convertir esos numeros en un array
 
-const listaNumeros = document.querySelectorAll("li");  //agregar los numeros al array
-listaNumeros.forEach(li => {
-  numeros.push(parseInt(li.innerText));
-});
+const listaNumeros = document.querySelectorAll("li"); 
+for (let i = 0; i < listaNumeros.length; i = i + 1) {
+  numeros.push(parseInt(listaNumeros[i].innerText));
+}
+
 
 console.log(numeros);
 
